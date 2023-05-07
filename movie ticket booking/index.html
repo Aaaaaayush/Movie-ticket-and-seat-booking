@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label>Pick a movie:</label>
+      <select id="movie">
+        <option value="10">Fast X ($10)</option>
+        <option value="12">Antman and the Wasp Quantumania ($12)</option>
+        <option value="8">Murder Mystery 2 ($8)</option>
+        <option value="9">Operation Fortune Ruse de Guerre ($9)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+    </p>
+    <script src="script.js"></script>
+
+    <h1 style="text-align: center;">Movie Seat Booking and Registration</h1>
+    <h3 style="text-align: center;">[ * ] marked fields are important</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        RegistrationID*:
+                    </td>
+                    <td>
+                    <input type="text" placeholder="registration id" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Username*:
+                    </td>
+                    <td>
+                    <input type="text" placeholder="Name" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password*:
+                    </td>
+                    <td>
+                    <input type="text" placeholder="*****" name="">    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email id*:
+                    </td>
+                    <td>
+                    <input type="text" placeholder="email" Email id="">
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        Mobile No*:
+                    </td>
+                    <td>
+                    <input type="text" placeholder="##########" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth (DOB)*:
+                    </td>
+                    <td>
+                    <input type="date" placeholder="dd/mm/yyyy" name="">
+                    </td>
+                </tr>
+                <td>
+                    <button onclick="aFunction()">submit</button>
+                    <script>
+                      function aFunction() {
+                        alert("Enjoy your movie :)")
+                      }
+                    </script>
+                    <button onclick="myFunction()">cancel</button>
+                    <script>
+                      function myFunction() {
+                        alert("Are you sure about that?")
+                      }
+                    </script>
+                </td>
+            </table>
+        </form>
+  </body>
+</html>
